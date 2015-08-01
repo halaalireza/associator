@@ -29,14 +29,14 @@ P.prop = 0.5; % proportion of more frequent words; <1
 P.freq = 2; % frequency of more frequent words
 P.phoneticsvector = VVphonset2; % 397 word vector
 P.semanticsvector = editedVVtrainset2; % 397 word semantic analogue vector 
-P.Ssize = 57; % nb of semantic features
-P.Sact = 28; % nb of active semantic features in each prototype or meaning
-P.nbof_prototypes = 5; % nb of semantic prototypes
+P.Ssize = 1029; % nb of semantic features
+P.Sact = [? varies for each word]; % nb of active semantic features in each prototype or meaning
+P.nbof_prototypes = [varies for each category]; % nb of semantic prototypes
 P.mindistance = 40; % the minimum Eucledian distance of semantic prototypes
 P.looseness = 0.05; % the looseness of semantic prototype-categories (the probability that an activation is different from that of the prototype)
-P.Psize = 120; % nb of phonological features for phoneticsgenerator_exact
-P.Pact = 12; % exact number of active features in each form for phoneticsgenerator_exact
-P.wordlength = 9; % the number of phonemes in words
+P.Psize = 456; % nb of phonological features 
+P.Pact = [? varies for each word]; % exact number of active features in each form for phoneticsgenerator_exact
+P.wordlength = [?varies for each word]; % the number of phonemes in words
 
 % Size of variable size layers (the size of all other layers depends on the lexicon)
 P.size_SH = 500; % hidden layer in the semantic (left) module
