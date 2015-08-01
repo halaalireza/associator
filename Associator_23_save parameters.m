@@ -22,15 +22,13 @@ P.weightinit = @randn; % weight initialization function: rand, randn (zeros do n
 P.randmin = 0; % rand: the lower limit of randomly initialized uniform weights; randn: the mean of the normally distributed random weights; zeros: has to be 0
 P.randmax = 0.1; % rand: the upper limit of randomly initialized uniform weights; randn: the multiplier of the standard normal distribution
 P.weightseed   = 'noseed'; % 'noseed' or a number between 0 and 2^31-2
-P.semanticseed = 'noseed'; % 'noseed' or a number between 0 and 2^31-2
-P.phoneticseed = 'noseed'; % 'noseed' or a number between 0 and 2^31-2
 
 % Vocabulary
 P.vocabsize = 397; % nb of words in the lexicon; with ecological and ratio: max 57!
 P.prop = 0.5; % proportion of more frequent words; <1
 P.freq = 2; % frequency of more frequent words
-P.phoneticsgenerator = @phoneticsgenerator_phonpheat; % ThomasAKS2003, exact, phonpheat
-P.semanticsgenerator = @semanticsgenerator_prototypes2; % prototypes, ecological, ratio, exact
+P.phoneticsvector = VVphonset2; % 397 word vector
+P.semanticsvector = editedVVtrainset2; % 397 word semantic analogue vector 
 P.Ssize = 57; % nb of semantic features
 P.Sact = 28; % nb of active semantic features in each prototype or meaning
 P.nbof_prototypes = 5; % nb of semantic prototypes
