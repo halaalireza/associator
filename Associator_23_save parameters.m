@@ -26,7 +26,7 @@ P.semanticseed = 'noseed'; % 'noseed' or a number between 0 and 2^31-2
 P.phoneticseed = 'noseed'; % 'noseed' or a number between 0 and 2^31-2
 
 % Vocabulary
-P.vocabsize = 100; % nb of words in the lexicon; with ecological and ratio: max 57!
+P.vocabsize = 397; % nb of words in the lexicon; with ecological and ratio: max 57!
 P.prop = 0.5; % proportion of more frequent words; <1
 P.freq = 2; % frequency of more frequent words
 P.phoneticsgenerator = @phoneticsgenerator_phonpheat; % ThomasAKS2003, exact, phonpheat
